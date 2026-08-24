@@ -10,14 +10,43 @@ export default function Contact() {
   const [sent, setSent] = useState(false);
   const [form, setForm] = useState({ name: '', email: '', message: '' });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch(
+      `${import.meta.env.VITE_API_URL}/api/contact`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      }
+    );
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.message || "Failed to send message");
+    }
+
     setSent(true);
+
+    setForm({
+      name: "",
+      email: "",
+      message: "",
+    });
+
     setTimeout(() => {
       setSent(false);
-      setForm({ name: '', email: '', message: '' });
     }, 3500);
-  };
+  } catch (error) {
+    console.error(error);
+    alert("Failed to send message. Please try again.");
+  }
+};
 
   const contactItems = [
     { icon: Mail, label: 'Email', value: personal.email, href: `mailto:${personal.email}` },
