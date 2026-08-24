@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowDown, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { personal } from '../data/portfolio';
 
