@@ -37,6 +37,7 @@ export default function About() {
               </div>
               <a
                 href={personal.resumeUrl}
+                download="Basith-Resume.pdf"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-base-900 bg-gradient-to-r from-accent-400 to-secondary-400 hover:shadow-lg hover:shadow-accent-400/25 transition-all duration-300 hover:scale-105"
               >
                 <Download className="w-4 h-4" />
