@@ -4,7 +4,7 @@ export const personal = {
   tagline: 'I build scalable web applications and delightful user experiences.',
   email: 'abdulbasitherayampattil@gmail.com',
   location: 'Kochi, Kerala',
-  resumeUrl: '#',
+  resumeUrl: '/Basith-Resume.pdf',
   github: 'https://github.com/basthep',
   linkedin: 'https://linkedin.com/in/abdul-basith-abb1802a3',
   twitter: '#',
