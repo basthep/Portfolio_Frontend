@@ -59,7 +59,7 @@ export const projects = [
 
   {
    title: 'FranchiseHub',
-   description: 'A full-stack franchise discovery platform built with the MERN stack. Users can explore franchise opportunities, browse categories, view investment and ROI details, and access protected franchise information. Includes authentication, MongoDB-powered franchise listings, dynamic categories, and an AI chatbot powered by Google Gemini.',
+   description: 'A full-stack franchise discovery platform built with the MERN stack, featuring franchise listings, categories, authentication, and investment details. Includes an AI chatbot powered by Google Gemini to help users explore franchise opportunities.',
    tech: ['React', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'Tailwind CSS', 'Google Gemini'],
    github: 'https://github.com/basthep/franchiseHub_Frontend',
    live: 'https://franchishub.vercel.app/',
