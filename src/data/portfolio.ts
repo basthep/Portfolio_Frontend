@@ -55,16 +55,7 @@ export const projects = [
     live: 'https://food-del-frontend-h8mz.onrender.com/',
     image: '/projects/food-ordering.png',
     featured: true,
-  },
-
-  {
-   title: 'FranchiseHub',
-   description: 'A full-stack franchise discovery platform built with the MERN stack, featuring franchise listings, categories, authentication, and investment details. Includes an AI chatbot powered by Google Gemini to help users explore franchise opportunities.',
-   tech: ['React', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'Tailwind CSS', 'Google Gemini'],
-   github: 'https://github.com/basthep/franchiseHub_Frontend',
-   live: 'https://franchishub.vercel.app/',
-   image: '/projects/franchisehub.png',
-   featured: true, },
+  }, 
 
   {
     title: 'Expense Tracker',
@@ -94,6 +85,17 @@ export const projects = [
     github: 'https://github.com/basthep/pos.git', 
     image: '/projects/pos.png',
     featured: false,
+  },
+
+  
+  {
+   title: 'FranchiseHub',
+   description: 'A full-stack franchise discovery platform built with the MERN stack, featuring franchise listings, categories, authentication, and investment details. Includes an AI chatbot powered by Google Gemini to help users explore franchise opportunities.',
+   tech: ['React', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'Tailwind CSS', 'Google Gemini'],
+   github: 'https://github.com/basthep/franchiseHub_Frontend',
+   live: 'https://franchishub.vercel.app/',
+   image: '/projects/franchisehub.png',
+   featured: true, 
   },
 ];
 
